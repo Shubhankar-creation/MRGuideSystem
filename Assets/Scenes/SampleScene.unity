@@ -181,7 +181,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &521401160
 GameObject:
@@ -769,10 +769,12 @@ GameObject:
   - component: {fileID: 2031564819}
   - component: {fileID: 2031564826}
   - component: {fileID: 2031564821}
+  - component: {fileID: 2031564823}
+  - component: {fileID: 2031564828}
+  - component: {fileID: 2031564825}
   - component: {fileID: 2031564822}
   - component: {fileID: 2031564824}
-  - component: {fileID: 2031564823}
-  - component: {fileID: 2031564825}
+  - component: {fileID: 2031564827}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -807,7 +809,7 @@ Transform:
   m_Children:
   - {fileID: 521401166}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2031564821
 MonoBehaviour:
@@ -887,3 +889,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AnchorPrefab: {fileID: 0}
+--- !u!114 &2031564827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031564818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fd407d1a0844302ba7b7756c960a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arCamera: {fileID: 0}
+  resolveAnchorPassedTimeout: 10
+--- !u!114 &2031564828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031564818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edb4c0083321c425991306dcf64b21ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInitialized:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRetarted:
+    m_PersistentCalls:
+      m_Calls: []
+  maxScanningAreaTime: 30
